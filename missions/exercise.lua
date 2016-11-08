@@ -8,8 +8,13 @@
 ]]
 
 -- INSERT YOUR CODE HERE
+function string.starts_with(str, prefix)
+    return string.sub(str, 1, #prefix) == prefix
+end
 
-
+function string.ends_with(str, suffix)
+    return string.sub(str, -#suffix, -1) == suffix
+end
 -- END OF CODE INSERT
 
 function test_starts_with()
